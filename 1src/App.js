@@ -3,13 +3,17 @@ import {Layout, Header, HeaderRow, Textfield, Navigation,Content,Drawer} from 'r
 import Main from "./components/main";
 import {Link} from 'react-router-dom';
 import ParticleBackground from './particlebackground';
-//import ParticlesBg from 'particles-bg'
+
+
 function App() {
   return (
     <div className="demo-big-content">
-      <ParticleBackground /> 
-      <Layout>
-        <Header className = "header-color" waterfall hideTop transparent>
+      <div style={{position:'absolute'}}>
+        <ParticleBackground />      
+      </div>
+    {/* 
+    <Layout>
+        <Header className = "header-color" waterfall hideTop>
             <HeaderRow title="Ahsan Syed">
             <Textfield
                     value=""
@@ -40,8 +44,7 @@ function App() {
             <div className="page-content" />
             <Main/>
         </Content>
-    </Layout>
-     
+    </Layout> */}
     </div>
   );
 }
